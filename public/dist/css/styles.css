@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+
+a, a:visited {
+  color: #1982A8;
+}
+a:hover, a:visited:hover {
+  color: #136380;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  table-layout: fixed;
+  padding: 0px;
+  margin: 0px;
+}
+table th, table td {
+  text-align: left;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+button {
+  width: 100%;
+  margin: 0;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+  background-color: #22B1E6;
+  transition: all 0.15s;
+  color: white;
+}
+button:hover {
+  background-color: #1982A8;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: solid 3px #22B1E6;
+  background-color: #F5F5F5;
+  border-radius: 0px;
+  width: 100%;
+  display: block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.15s;
+}
+input:focus, textarea:focus {
+  border-color: #1982A8;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 92px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.form {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: dashed 3px #1DC225;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .form {
+    margin-right: 2rem;
+  }
+}
+
+.table {
+  width: 100%;
+  flex-grow: 1;
+}
+.table caption {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.table th {
+  border-bottom: solid 2px #1DC225;
+  padding-bottom: 0.75rem;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  display: flex;
+}
+.overlay.hide {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.modal .form {
+  margin-bottom: 0;
+}
+.modal .close {
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+}
+.modal .close i {
+  font-size: 2rem;
+  color: red;
+  transition: all 0.15s;
+}
+.modal .close i:hover {
+  color: darkred;
+}
+
+/*# sourceMappingURL=styles.css.map */
