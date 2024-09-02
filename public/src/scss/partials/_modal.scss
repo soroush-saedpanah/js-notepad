@@ -1,0 +1,43 @@
+.overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+
+    &.hide {
+        display: none;
+    }
+}
+
+.modal {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+
+    .form {
+        margin-bottom: 0;
+    }
+    .close {
+        position: absolute;
+        top: -0.75rem;
+        right: -0.75rem;
+        i {
+            font-size: 2rem;
+            color: red;
+            transition: all 0.15s;
+
+            &:hover {
+                color: darkred;
+            }
+        }
+    }
+}

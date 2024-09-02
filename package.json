@@ -1,0 +1,26 @@
+{
+  "name": "js-notepad",
+  "version": "1.0.0",
+  "description": "This is a simple notepad app using pure JavaScript & HTML & CSS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node app.js",
+    "css": "sass ./public/src/scss/styles.scss ./public/dist/css/styles.min.css --style compressed --no-source-map",
+    "css-dev": "sass ./public/src/scss/styles.scss ./public/dist/css/styles.css -w",
+    "js": "webpack",
+    "js-dev": "webpack --config webpack.config.dev.js"
+  },
+  "author": "Hemin, Soroush",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "inspectpack": "^4.7.1",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

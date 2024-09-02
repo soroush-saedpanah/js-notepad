@@ -1,0 +1,12 @@
+.form {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: dashed 3px #1DC225;
+    border-radius: 8px;
+
+    @media (min-width: 768px) {
+        margin-right: 2rem;
+    }
+}

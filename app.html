@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Notepad</title>
+    <link rel="stylesheet" href="/dist/fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+</head>
+<body>
+
+    <section class="container">
+        <form method="get" action="/app.html" class="form" id="create-note">
+            <input type="text" name="title" placeholder="*Title" required>
+            <textarea name="note" placeholder="*Note" required rows="4"></textarea>
+            <button>Submit</button>
+        </form>
+        <table class="table">
+            <caption>
+                <a href="#" id="clean">Clean Notes</a>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Note 1</td>
+                    <td>
+                        <a href="#" class="update" data-id="1"><i class="fa-solid fa-pen-to-square green"></i></a>
+                        <a href="#" class="delete" data-id="1"><i class="fa-solid fa-trash-can red"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note 2</td>
+                    <td>
+                        <a href="#" class="update" data-id="2"><i class="fa-solid fa-pen-to-square green"></i></a>
+                        <a href="#" class="delete" data-id="2"><i class="fa-solid fa-trash-can red"></i></a>
+                    </td>
+                </tr> -->
+            </tbody>
+            <tfoot style="display: none;">
+                <tr>
+                    <td colspan="2">No notes fond!</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section class="overlay hide">
+        <div class="modal">
+            <a href="#" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+            <form method="get" action="/app.html" class="form" id="update-note">
+                <input type="hidden" name="id">
+                <input type="text" name="title" placeholder="*Title" required>
+                <textarea name="note" placeholder="*Note" required rows="4"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/dist/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.table {
+    width: 100%;
+    flex-grow: 1;
+
+    caption {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    th {
+        border-bottom: solid 2px #1DC225;
+        padding-bottom: 0.75rem;
+    }
+}
